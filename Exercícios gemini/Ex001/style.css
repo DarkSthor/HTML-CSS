@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor01: rgb(8, 109, 84);
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(8, 109, 84), rgb(1, 29, 61));
+    color: white;
+    text-align: center;
+}
+
+h1{
+    font: bold 40px arial, sans-serif;
+    padding-top: 10px;
+}
+
+p{
+    font: 15px arial, sans-serif;
+    padding: 10px;
+}
+
+.cartao_perfil{
+    background-color: rgb(245, 227, 227);
+    height: 350px;
+    width: 300px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.39);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+div img{
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.473));
+}
+
+div:hover{
+    transform: scale(1.01);
+}
+
+
+.botao{
+    background-color: rgb(245, 227, 227);
+    margin-top: 20px;
+    width: 70px;
+    height: 35px;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover{
+    background-color: rgb(40, 47, 87);
+    color: white;
+    transform: scale(1.05);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
