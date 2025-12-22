@@ -16,6 +16,7 @@ header{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.548);
 }
 
 header h1{
@@ -46,6 +47,7 @@ a:hover{
     padding-bottom: 12vw;
     background-color: white;
     height:fit-content;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.603);
 }
 
 #semFundo p{
@@ -62,7 +64,6 @@ a:hover{
     padding-left: 20px;
     padding-top: 50px;
     padding-bottom: 12vw;
-
 }
 
 #comFundo1 p{
