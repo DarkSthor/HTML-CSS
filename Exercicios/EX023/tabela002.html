@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--Anatomia de tabelas grandes
+        Table
+            Thead
+                tr, td, th
+            Tbody
+                tr, td, th
+            Tfoot
+                tr, td, th
+    -->
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">4.08.801</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.87.907</td>
+            </tr>
+
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.299.425</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">1.223.547</td>
+            </tr>
+
+            <tr>
+                <td>Minas-Gerais</td>
+                <td class="num">21.393.441</td>
+            </tr>
+
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.890.517</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td class="num"><strong>30.302.050</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
