@@ -50,7 +50,7 @@ section
 
 
 .campo input{
-    background-color: #402c5c;
+    background-color: #d9cee9;
     width: 80%;
     height: 36px;
     transform: translateX(14px);
@@ -63,8 +63,8 @@ section
 }
 
 input::placeholder{
-    color: white;
-    text-indent: 5px;
+    color: rgba(0, 0, 0, 0.726);
+    padding-left: 10px;
 }
 
 .botao{
