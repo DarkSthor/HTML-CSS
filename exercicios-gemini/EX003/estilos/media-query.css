@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+    body{
+        background-image: linear-gradient(to top, #2E2B33, #4e4857);
+    }
+
+    section{
+        width: 80vw;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #imagem{
+        width: 50%;
+        height: 100%;
+    }
+
+    #formulario{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #formulario p{
+        font-size: 1em;
+    }
+
+    #formulario .botao:first-of-type {
+        margin-top: 65%; 
+    }
+}
+
+@media screen and (min-width: 992px){
+    body{
+        background-image: linear-gradient(to top, #2E2B33, #4e4857);
+    }
+
+    section{
+        width: 80vw;
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    #imagem{
+        width: 50%;
+        height: 100%;
+    }
+
+    #formulario{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #formulario p{
+        font-size: 1.2em;
+    }
+
+    #formulario .campo{
+        margin-top: 10px;
+    }
+
+    #formulario .botao:first-of-type {
+        margin-top: 47%; 
+    }
+}

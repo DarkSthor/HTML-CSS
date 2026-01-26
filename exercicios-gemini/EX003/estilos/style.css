@@ -4,6 +4,7 @@
 :root{
     --cor001: #553D7A;
     --cor002: #3F3550;
+    --cor003: #2E2B33;
 }
 
 *{
@@ -13,11 +14,12 @@
 }
 
 body, html{
-    background-color: var(--cor002);
+    background-color: var(--cor003);
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    min-width: 100vw;
 }
 
 section{   
@@ -29,28 +31,79 @@ section{
     box-shadow: 0px 0px 10px black;
 }
 
-.formulario input[type=submit]{
+section
+
+.campo{
+    background-color: #3F3550;
+    width: 90%;
+    height: 40px;
+    margin: auto;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.campo i{
+    font-size: 1.2em;
+    color: white;
+}
+
+
+.campo input{
+    background-color: #402c5c;
+    width: 80%;
+    height: 36px;
+    transform: translateX(14px);
+    border-radius: 5px;
+}
+
+.campo input:focus-within{
+    background-color: white;
+    text-indent: 5px;
+}
+
+input::placeholder{
+    color: white;
+    text-indent: 5px;
+}
+
+.botao{
+    background-color: #3F3550;
+    color: white;
+    border: none;
     display: block;
     margin: auto;
     margin-top: 5px;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.formulario input[type=button]{
-    display: block;
-    margin: auto;
-    margin-top: 5px;
+.botao:hover{
+    background-color: #4c356d;
+    transform: scale(1.01);
 }
 
-.formulario{
+.botao:active{
+    transform: scale(0.95);
+}
+
+#formulario{
     text-align: center;
     padding: 5px;
 }
 
-.formulario p{
+#formulario p{
     font-size: 0.8em;
 }
 
-.imagem{
+#formulario label{
+    display: none;
+}
+
+#imagem{
     background: var(--cor002) url(../imagens/tela-login.jpg);
     background-size: cover;
     background-position: center center;

@@ -4,31 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
     <main>
-
         <section>
-            <div class="imagem">
+            <div id="imagem">
                 <!--Aqui vai a imagem-->
             </div>
 
-            <div class="formulario">
+            <div id="formulario">
                 <h1>Login</h1>
 
                 <p>Seja bem-vindo de volta, faça o login para acessar a sua conta</p>
 
                 <form action="" method="post" autocomplete="on">
 
-                    <input type="email" name="email" id="iemail" placeholder="Digite seu email...">
-                    <label for="iemail">E-mail</label>
+                    <div class="campo">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="email" name="email" id="iemail" placeholder="Digite seu email..." minlength="30" required>
+                        <label for="iemail">E-mail</label>
+                    </div>
+                    
+                    <div class="campo">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha..." minlength="8" maxlength="20" required>
+                        <label for="isenha">Senha</label>
+                    </div>
 
-                    <input type="password" name="senha" id="isenha" placeholder="Digite sua senha...">
-                    <label for="isenha">Senha</label>
-
-                    <input type="submit" value="Enviar">
-                    <input type="button" value="Esqueci a senha">
+                    <input type="submit" value="Enviar" class="botao">
+                    <input type="button" value="Esqueci a senha" class="botao">
                 </form>
             </div>
         </section>
