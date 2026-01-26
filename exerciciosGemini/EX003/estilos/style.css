@@ -112,6 +112,6 @@ input::placeholder{
     background: var(--cor002) url(../imagens/tela-login.jpg);
     background-size: cover;
     background-position: center center;
-    height: 25vh;
+    height: 35vh;
 }
 
