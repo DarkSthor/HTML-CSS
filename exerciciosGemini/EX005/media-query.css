@@ -1,0 +1,34 @@
+@media screen and (max-width: 1325px){
+    .container01{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    .imagem01{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .container02{
+        grid-template-columns: 1fr;
+    }
+
+    .container03{
+        grid-template-columns: 1fr;
+    }
+
+    .imagem03{
+        order: -1;
+    }
+
+    .texto03{
+        order: 1;
+    }
+
+    .menuArtigo02{
+        order: 2;
+    }
+}
