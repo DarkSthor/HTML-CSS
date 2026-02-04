@@ -32,3 +32,15 @@
         order: 2;
     }
 }
+
+@media screen and (max-width: 700px){
+    header > nav{
+        margin-top: 30px;
+        grid-template-columns: 1fr;
+    }
+
+    header > nav > a:not(:last-child){
+    border-bottom: 2px solid rgb(187, 181, 181);
+}
+}
+
