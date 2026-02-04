@@ -10,7 +10,7 @@ header{
     display: grid;
     height: 200px;
     align-items: end;
-    background-color: grey;
+    background-color: rgb(0, 88, 88);
     color: white;
 }
 
@@ -45,11 +45,11 @@ header > nav > a:not(:last-child){
 }
 
 header > nav > a:hover{
-    background-color: rgb(70, 70, 70);   
+    background-color: rgb(0, 54, 54);   
 }
 
 body{
-    background-color: rgb(223, 221, 221);
+    background-color: #edf4ff;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -68,7 +68,7 @@ body{
     border: 4px solid white;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.37);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.281);
 }
 
 .imagem01 img{
@@ -81,8 +81,9 @@ body{
     width: 900px;
     background-color: white;
     height: 300px;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.281);
 }
 
 .texto01 h2{
@@ -103,10 +104,11 @@ body{
     width: 90%;
     margin: auto;
     margin-top: 50px;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
     background-color: white;
     border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.281);
 }
 
 .texto02{
@@ -120,13 +122,13 @@ body{
 
 .texto02 > p{
     line-height: 1.3em;
+    text-indent: 2em;
 }
 
 .imagem02{
-    border: 4px solid white;
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.37);
+    
 
     align-self: center;
     justify-self: center;
@@ -141,21 +143,90 @@ body{
     grid-template-rows: repeat(3, 1fr);
     border-radius: 10px;
     gap: 10px;
+    padding: 10px;
+    background-color: rgb(216, 215, 215);
 }
 
 .menuArtigo > a{
     color: white;
-    background-color: gray;
+    background-color: rgb(0, 88, 88);
     border-radius: 10px;
     text-align: center;
     text-decoration: none;
     font-size: 1.5em;
     padding: 10px;
-    padding-top: 20px;
+    padding-top: 15px;
     transition: background-color 0.2s ease-in-out;
 }
 
-.menuArtigo > a:hover{
-    background-color: rgb(70, 70, 70);
+.menuArtigo a:hover{
+    background-color: rgb(0, 54, 54);
     transform: scale(1.02);
+}
+
+.container03{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 250px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.281);
+}
+
+.imagem03{
+    border-radius: 10px;
+    overflow: hidden;
+
+    align-self: center;
+    justify-self: center;
+}
+
+.imagem03 img{
+    display: block;
+}
+
+.texto03{
+    padding: 10px;
+    padding-left: 30px;
+}
+
+.texto03 h2{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+.texto03 p{
+    line-height: 1.3em;
+    text-indent: 2em;
+}
+
+.menuArtigo02{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: rgb(216, 215, 215);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menuArtigo02 a{
+    color: white;
+    background-color: rgb(0, 88, 88);
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 10px;
+    padding-top: 15px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.menuArtigo02 a:hover{
+    background-color: rgb(0, 54, 54);
+    transform: scale(1.02);
+
 }
