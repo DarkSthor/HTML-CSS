@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela login</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
@@ -22,18 +23,19 @@
                 <form action="" method="post" autocomplete="on">
                     <div class="campo">
                         <i class="fa-solid fa-user"></i>
-                        <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail...">
+                        <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail..." required maxlength="40">
                         <label for="iemail">E-mail</label>
                     </div>
 
                     <div class="campo">
                         <i class="fa-solid fa-lock"></i>
-                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha...">
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha..." required minlength="8" maxlength="20">
                         <label for="isenha">Senha</label>
                     </div>
 
                     <input type="submit" value="Enviar" class="botao">
 
+                    <i class="fa-solid fa-envelope"></i>
                     <a href="">Esqueci a senha</a>
                 </form>
             </div> 

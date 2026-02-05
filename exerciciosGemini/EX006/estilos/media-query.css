@@ -1,0 +1,45 @@
+@media screen and (min-width: 700px) {
+    body{
+        background-image: linear-gradient(to top, rgb(16, 30, 41), rgb(26, 47, 65));
+    }
+
+    .container{
+        width: 80vw;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .imagem{
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .formulario{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4 auto);
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    .formulario h1{
+        font-size: 3em;
+    }
+
+    .campo{
+        align-self: center;
+        width: 35vw;
+        height: 40px;
+    }
+
+    .botao{
+        width: 20vw;
+        height: 40px;
+    }
+
+    .formulario p{
+        text-align: center;
+        font-size: 1.3em;
+    }
+}
+
