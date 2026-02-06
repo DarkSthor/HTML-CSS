@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Lar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="estilosCompras/style.css">
+</head>
+<body>
+    <header>
+        <button class="button01"><a href="index.html">Voltar</a></button>
+
+        <div class="pesquisa">
+            <input type="text" name="busca" id="ibusca" placeholder="Lugar, Vizinhaça, Escola...">
+            <button>Buscar <i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <div class="menu">
+            <div class="filtroTipoImo">
+                <h3>Tipo de imóvel</h3>
+
+                <label><input type="radio" name="tipo" id="casa"> Casa</label>
+                <label><input type="radio" name="tipo" id="apto"> Apartamento</label>
+                <label><input type="radio" name="tipo" id="kitnet"> Kitnet</label>
+
+                <a href="">Todos os tipos de imóveis <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="filtroPreco">
+                <h3>Preço</h3>
+
+                <label>Máximo: <input type="number" name="precoMax" id="iprecoMax" placeholder="R$ 0"></label>
+                <label>Mínimo: <input type="number" name="precoMin" id="iprecoMin" placeholder="R$ 0"></label>
+            </div>
+
+            <div class="filtroArea">
+                <h3>Área</h3>
+
+                <label>Máximo: <input type="number" name="precoMax" id="iprecoMax" placeholder="0 m2"></label>
+                <label>Mínimo: <input type="number" name="precoMin" id="iprecoMin" placeholder="0 m2"></label>
+            </div>
+
+            <div class="pesquisarFiltro">
+                <button>Limpar filtros</button>
+                <button>Pesquisar <i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="item">
+                <div class="imagem">
+                    <!--Aqui vai a imagem-->
+                </div>
+                
+                <article class="info">
+                    <h1>St. Mary Street</h1>
+                    <p>Avenida Coronel Cardoso</p>
+                </article>
+
+                <article class="preco">
+                    <p>R$800.00/mês<br>IPTU R$500.00</p>
+
+                    <button>Mensagem</button>
+                </article>
+            </div>
+
+            <div class="item">
+                <div class="imagem2">
+                    <!--Aqui vai a imagem-->
+                </div>
+                
+                <article class="info">
+                    <h1>St. Charles Avenue</h1>
+                    <p>Avenida Jardim diabão</p>
+                </article>
+
+                <article class="preco">
+                    <p>R$1000.00/mês<br>IPTU R$800.00</p>
+
+                    <button>Mensagem</button>
+                </article>
+            </div>
+
+            <div class="item">
+                <div class="imagem3">
+                    <!--Aqui vai a imagem-->
+                </div>
+                
+                <article class="info">
+                    <h1>Meadow Lane</h1>
+                    <p>Avenida Cabrunco</p>
+                </article>
+
+                <article class="preco">
+                    <p>R$1200.00/mês<br>IPTU R$800.00</p>
+
+                    <button>Mensagem</button>
+                </article>
+            </div>
+
+            <div class="item">
+                <div class="imagem4">
+                    <!--Aqui vai a imagem-->
+                </div>
+                
+                <article class="info">
+                    <h1>Silverado Trail.</h1>
+                    <p>Avenida Estopo</p>
+                </article>
+
+                <article class="preco">
+                    <p>R$1200.00/mês<br>IPTU R$800.00</p>
+
+                    <button>Mensagem</button>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

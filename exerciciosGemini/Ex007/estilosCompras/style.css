@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    height: 70px;
+    border-bottom: 2px solid rgb(199, 198, 198);
+}
+
+.button01{
+    background-color: rgb(1, 97, 1);
+    color: white;
+    width: 150px;
+    height: 35px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, scale 0.3s;
+    margin-left: 10px;
+}
+
+.button01 a{
+    padding-top: 8px;
+    display: block;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    
+}
+
+.button01:hover{
+    background-color: rgb(0, 143, 0);
+    color: white;
+    transform: scale(1.05);
+}
+
+.pesquisa{
+    display: flex;
+    justify-self: flex-end;
+    background-color: white;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.pesquisa input{
+    height: 100%;
+    width: 80%;
+    border: none;
+    padding: 10px;
+    font-size: 1.3em;
+}
+
+.pesquisa input:focus{
+    outline: none;
+}
+
+.pesquisa button{
+    color: white;
+    background-color: rgb(1, 97, 1);
+    height: 100%;
+    width: 40%;
+    border: none;
+    padding: 10px;
+    font-size: 1.3em;
+    cursor: pointer;
+    align-self: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.pesquisa button:hover{
+    background-color: rgb(0, 143, 0);
+    color: white;
+}
+
+body{
+    background-color: rgb(241, 241, 241);
+    font-family: "Roboto", sans-serif;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-color: white;
+    height: fit-content;
+    width: 350px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.418);
+    
+    margin-top: 20px;
+    position: sticky;
+    top: 5px;
+    left: 0;
+    z-index: 100;
+}
+
+.filtroTipoImo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+
+.filtroTipoImo input[type="radio"]{
+    accent-color: rgb(1, 97, 1);
+    cursor: pointer;
+}
+
+.filtroPreco{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+
+.filtroPreco input{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.filtroPreco input:focus{
+    outline: none;
+    border: 1px solid rgb(0, 143, 0)
+}
+
+.filtroArea{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-bottom: 1px solid rgb(199, 198, 198);
+}
+
+.filtroArea input{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.filtroArea input:focus{
+    outline: none;
+    border: 1px solid rgb(0, 143, 0)
+}
+
+.pesquisarFiltro{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.pesquisarFiltro button{
+    height: 40px;
+    width: 120px;
+    border: none;
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: rgb(1, 97, 1);
+    color: white;
+    cursor: pointer;
+}
+
+.pesquisarFiltro button:hover{
+    background-color: rgb(0, 143, 0);
+}
+
+.container {
+  display: grid !important; 
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 20px;
+  width: 90vw;
+  margin: 20px auto;
+}
+
+.item{
+    display: grid !important; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 300px;
+    width: 98%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.item h1{
+    font-size: 3em;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.info p{
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.preco{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.preco p{
+    display: block;
+    font-size: 1em;
+}
+
+.preco button{
+    background-color: rgb(1, 97, 1);
+    color: white;
+    width: 150px;
+    height: 35px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, scale 0.3s;
+}
+
+.item button:hover{
+    background-color: rgb(0, 143, 0);
+    color: white;
+    transform: scale(1.05);
+}
+
+.imagem{
+    background: url(../imagens/fotoCasa2.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.imagem2{
+    background: url(../imagens/fotoCasa1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.imagem3{
+    background: url(../imagens/fotoCasa3.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.imagem4{
+    background: url(../imagens/fotoCasa4.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
