@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(202, 219, 224);
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    height: 150px;
+    background-color: teal;
+}
+
+header h1{
+    text-align: center;
+    align-self: center;
+    font-size: 3em;
+    color: white;
+}
+
+header nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 5px;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    transition: background-color 0.2s ease-in-out;
+}
+
+header a:hover{
+    background-color: rgb(0, 99, 99);
+}
+
+main{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0px 10px 0px 10px;
+    gap: 10px;
+    min-height: 75vh;
+    align-items: start;
+}
+
+.artigo{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+}
+
+.artigo h2{
+    font-size: 2em;
+}
+
+.artigo p{
+    padding-top: 10px;
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 10px;
+}
+
+.imagem{
+    display: block;
+    align-self: center;
+    justify-self: end;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
+}
+
+.extras{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    gap: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+}
+
+.extras div{
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.extras div img{
+    display: block;
+    border-radius: 10px;
+}
+
+.extras div a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    background-color: teal;
+    margin-bottom: 5px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.extras div a:hover{
+    background-color: rgb(0, 99, 99);
+}
+
+footer{
+    color: white;
+    height: 30px;
+    background-color: teal;
+}
+
+footer p{
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 5px;
+}
